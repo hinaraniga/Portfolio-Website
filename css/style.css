@@ -1,0 +1,127 @@
+/*
+Colors used:
+Primary Color (Teal): #3ba1bd;
+Secondary Color (Green): #5492a3;
+Background Colour (white): #ffffff
+Text Colour (black): #000000
+*/
+
+/*
+Fonts used:
+Heading: Montserrat, Bold, 24pt
+Sub-Heading: Montserrat, Semi-Bold, 20pt
+Body: Montserrat, Light, 16pt
+Emphasised Body: Montserrat, Regular, 16pt
+Hyperlink: Montserrat, Semi-Bold, Underlined, 16pt
+*/
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px /*All body copy is 16px*/
+    font-weight: 300; /*All body text is light weight*/
+    line-height: 1.6
+    colour: #000000
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;/*All headings are 1.4 line-height*/
+}
+
+h1 {
+  font-size: 1.5em; /*Headings are 24px*/
+  font-weight: 700; /*Headings are Bold Text*/
+}
+
+h2 {
+  font-size: 1.5em; /*Headings are 24px*/
+  font-weight: 700;/*Headings are bold*/
+  color: #3ba1bd /*Change the headings to the primary colour*/
+}
+
+h3 {
+  font-size: 1.25em; /*Sub-headings are 20px*/
+  font-weight: 600;/*Sub-headings are semi-bold*/
+}
+
+
+h4 {
+  font-size: 1em; /*Emphasised body copy is 16px*/
+  font-weight: 400; /*Emphasised body copy is regular text*/
+}
+
+img {
+  width: 100%; /*This is setting all images to the correct width of the viewport*/
+}
+
+.logo {
+  width: 30%; /*This will change the logo to approx. a third of the viewport width*/
+}
+
+a {
+  color: #3ba1bd; /*Links are in primary colour*/
+  text-decoration: none; /* No underlining */
+  font-weight: 400;
+}
+
+a:visited { /* visited link */
+  color: #5492a3; /*visited links are in secondary colour*/
+  font-weight: 300;
+}
+
+a:hover, a:focus {
+  color: #3ba1bd;
+  text-decoration: underline; /* Underlining when hovering or focus over a link */
+  font-weight: 600;
+}
+
+a:active { /* selected link */
+  color: #5492a3;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #3ba1bd;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 2px solid #5492a3; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:visited {
+  color:#ffffff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.button:hover, .button:focus {
+  color: #ffffff;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #3ba1bd;
+  text-transform: uppercase;
+  border: 2px solid #3ba1bd;
+}
+
+.button.contact:hover, .button.contact:focus {
+  background-color: #3ba1bd;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  background-color: #5492a3;
+  color: #000000;
+}
