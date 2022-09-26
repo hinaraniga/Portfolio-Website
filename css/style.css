@@ -66,6 +66,10 @@ img {
   /*This is setting all images to the correct width of the viewport*/
 }
 
+.portrait {
+width: 40%;
+}
+
 .logo {
   max-width: 150px;
     /*This will change the logo to 150px width*/
@@ -275,6 +279,10 @@ Medium devices (641px and larger)
     padding: 20px 0 13px;
   }
 
+  .portrait {
+  width: 35%;
+  }
+
   nav {
     width: auto;
     text-align: right;
@@ -356,6 +364,18 @@ Large devices (1024px or larger)
   }
       /*This will change the logo to 641px width on desktop devices*/
 
+  .portrait {
+      width: 20%;
+      }
+
+  .navtoggle.responsive nav{
+      padding: 0px 0 0;
+      }
+
+  .navtoggle.responsive li {
+    border-top: 1px solid transparent;
+    padding: 0px 0;
+    }
 
 }
 
@@ -407,6 +427,9 @@ X-large devices (1440px or larger)
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
+/*Animation*/
+
 
 @keyframes cloud-move {
   from {
