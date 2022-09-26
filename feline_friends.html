@@ -10,21 +10,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9ca6bdb421.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <div class="container"><img src="img/About/Hina_Raniga_whitelogo@2x.png" alt="Hina Raniga" class="logo">
-    <div>
-      <nav>
-        <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      </nav>
+    <div class="container">
+<div class="navtoggle" id="myNavtoggle">
+      <img src="img/About/Hina_Raniga_whitelogo@2x.png" alt="Hina Raniga" class="logo">
+      <div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-sharp fa-solid fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
     </div>
-  </div>
   </header>
   <main>
     <div class="container">
@@ -33,75 +38,81 @@
         <source srcset="img/Feline_Friends/Feline_Friends_FrontCover.png" media="(max-width:767px)">
         <img src="img/Feline_Friends/Feline_Friends_FrontCover@2x.png" alt="Feline Friends Project Front Cover image">
       </picture>
-      <p>Feline Friends is an online retail product, targeting cat owners. This would be a ‘one stop shop’, allowing cat owners to find varied brands and products as well as nearby specialist services, all using their device. Wherever and whenever they need to!</p>
+      <p>Feline Friends is an online retail product, targeting cat owners. This would be a ‘one stop shop’, allowing cat owners to find varied brands and products as well as nearby specialist services, all using their device. Wherever and whenever
+        they need to!</p>
     </div>
     <div class="container">
       <h2>My Process</h2>
       <p>The User Centred Design process was followed; from discovery, to concepting to prototyping and user testing. UX and UI design disciplines were utilised using Balsamiq and Sketch as design tools.</p>
-      <picture><source srcset="img/Feline_Friends/Feline_Friends_Design Process.png" media="(max-width:767px)">
-        <img src="img/Feline_Friends/Feline_Friends_Design Process@2x.png" alt="Feline Friends Design process image"></picture>
+      <picture>
+        <source srcset="img/Feline_Friends/Feline_Friends_Design Process.png" media="(max-width:767px)">
+        <img src="img/Feline_Friends/Feline_Friends_Design Process@2x.png" alt="Feline Friends Design process image">
+      </picture>
     </div>
     <div class="container">
       <h3>Research & Ideation</h3>
       <p>I was provided with an initial project brief and baseline user stories. From this I researched some well known competitors such as ‘Pets at Home’ and developed a branding guidelines document and user flows based on the stories in scope.</p>
-      <picture><source srcset="img/Feline_Friends/Feline_Friends_UserFlow.png" media="(max-width:767px)">
-          <img src="img/Feline_Friends/Feline_Friends_UserFlow@2x.png" alt="Feline Friends user flow image">
-        </picture>
+      <picture>
+        <source srcset="img/Feline_Friends/Feline_Friends_UserFlow.png" media="(max-width:767px)">
+        <img src="img/Feline_Friends/Feline_Friends_UserFlow@2x.png" alt="Feline Friends user flow image">
+      </picture>
       <p>Crazy 8s were then generated to gather a larger number of ideas in a short space of time.</p>
-      <picture><source srcset="img/Feline_Friends/Feline_Friends_crazy8s.png" media="(max-width:767px)">
-          <img src="img/Feline_Friends/Feline_Friends_crazy8s@2x.png" alt="Feline Friends crazy 8s image">
-        </picture>
-        <p>User research also uncovered key areas user’s wanted to see from an initial release of the app; such as logging, easy search with media clips and clear imagery as well as the ability to save recipes that could easily be found again later
-          on.</p>
+      <picture>
+        <source srcset="img/Feline_Friends/Feline_Friends_crazy8s.png" media="(max-width:767px)">
+        <img src="img/Feline_Friends/Feline_Friends_crazy8s@2x.png" alt="Feline Friends crazy 8s image">
+      </picture>
+      <p>User research also uncovered key areas user’s wanted to see from an initial release of the app; such as logging, easy search with media clips and clear imagery as well as the ability to save recipes that could easily be found again later
+        on.</p>
     </div>
     <div class="container">
       <h3>Wireframe</h3>
       <p>Initial low fidelity wireframes were sketched out, using selected designs from the crazy 8s exercise. These were based on the user flows created.</p>
       <picture>
         <source srcset="img/Feline_Friends/Feline_Friends_low_fidelity.png" media="(max-width:767px)">
-            <img src="img/Feline_Friends/Feline_Friends_low_fidelity@2x.png" alt="Feline Friends low fidelity image">
-          </picture>
-    <div class="container">
-      <h3>Design</h3>
-      <p>The sketches were migrated into digital design using Balsamiq. The designs were developed further into mid-fidelity, incorporating more detailed elements and interactions.</p>
-      <picture>
-        <source srcset="img/Feline_Friends/Feline_Friends_Mid_Fidelity.png" media="(max-width:767px)">
-        <img src="img/Feline_Friends/Feline_Friends_Mid_Fidelity@2x.png" alt="Feline Friends Mid-Fidelity image">
+        <img src="img/Feline_Friends/Feline_Friends_low_fidelity@2x.png" alt="Feline Friends low fidelity image">
       </picture>
-    </div>
-    <div class="container">
-      <h3>Prototype</h3>
-      <p>A prototype was created using the Balsamiq designs and tested on three different users that would represent the target market. Valuable feedback was gathered and the outcome was a backlog of changes that could either be implemented in the initial release or ‘parked’ for future development.</p>
-    </div>
-    <div class="container">
-      <h3>Final Designs</h3>
-      <p>Final designs were generated in Sketch, incorporating high priority items captured during testing. This included the design of a desktop version as the product was a responsive design.</p>
-      <picture>
-        <source srcset="img/Feline_Friends/Feline_Friends_High_Fidelity_1.png" media="(max-width:767px)">
-        <img src="img/Feline_Friends/Feline_Friends_High_Fidelity_1@2x.png" alt="Feline Friends High-Fidelity image">
-      </picture>
-      <picture>
-        <source srcset="img/Feline_Friends/Feline_Friends_High_Fidelity_2.png" media="(max-width:767px)">
-        <img src="img/Feline_Friends/Feline_Friends_High_Fidelity_2@2x.png" alt="Feline Friends High-Fidelity image">
-      </picture>
-      <picture>
-        <source srcset="img/Feline_Friends/Feline_Friends_Desktop_Design.png" media="(max-width:767px)">
-        <img src="img/Feline_Friends/Feline_Friends_Desktop_Design@2x.png" alt="Feline Friends High-Fidelity image">
-      </picture>
-      <picture>
-        <source srcset="img/Feline_Friends/Feline_Friends_Mobile_Mockups.png" media="(max-width:767px)">
-        <img src="img/Feline_Friends/Feline_Friends_Mobile_Mockups@2x.png" alt="Feline Friends High-Fidelity image">
-      </picture>
-    </div>
-    <div class="container">
-      <h2>Conclusion</h2>
-      <p>Is the design TOO simplistic?</p>
-      <p> No! The test participants liked the simplistic design and it made it easier to navigate and understand.</p>
-      <p><b>Lesson Learnt: If in doubt, always test!</b></p>
-      <p>Will using Balsamiq for mid-fidelity mean it takes longer to get to the final design in Sketch?</p>
-      <p>Actually, using Balsamiq meant I could quickly create a good quality prototype that could easily be shared with participants via email. The time saved here meant I could afford the time spent migrating the design into sketch!</p>
-<p><b>Lesson Learnt: Balsamiq is great for quick low to mid-fidelity designs and good for prompt prototyping as well!</b></p>
-    </div>
+      <div class="container">
+        <h3>Design</h3>
+        <p>The sketches were migrated into digital design using Balsamiq. The designs were developed further into mid-fidelity, incorporating more detailed elements and interactions.</p>
+        <picture>
+          <source srcset="img/Feline_Friends/Feline_Friends_Mid_Fidelity.png" media="(max-width:767px)">
+          <img src="img/Feline_Friends/Feline_Friends_Mid_Fidelity@2x.png" alt="Feline Friends Mid-Fidelity image">
+        </picture>
+      </div>
+      <div class="container">
+        <h3>Prototype</h3>
+        <p>A prototype was created using the Balsamiq designs and tested on three different users that would represent the target market. Valuable feedback was gathered and the outcome was a backlog of changes that could either be implemented in the
+          initial release or ‘parked’ for future development.</p>
+      </div>
+      <div class="container">
+        <h3>Final Designs</h3>
+        <p>Final designs were generated in Sketch, incorporating high priority items captured during testing. This included the design of a desktop version as the product was a responsive design.</p>
+        <picture>
+          <source srcset="img/Feline_Friends/Feline_Friends_High_Fidelity_1.png" media="(max-width:767px)">
+          <img src="img/Feline_Friends/Feline_Friends_High_Fidelity_1@2x.png" alt="Feline Friends High-Fidelity image">
+        </picture>
+        <picture>
+          <source srcset="img/Feline_Friends/Feline_Friends_High_Fidelity_2.png" media="(max-width:767px)">
+          <img src="img/Feline_Friends/Feline_Friends_High_Fidelity_2@2x.png" alt="Feline Friends High-Fidelity image">
+        </picture>
+        <picture>
+          <source srcset="img/Feline_Friends/Feline_Friends_Desktop_Design.png" media="(max-width:767px)">
+          <img src="img/Feline_Friends/Feline_Friends_Desktop_Design@2x.png" alt="Feline Friends High-Fidelity image">
+        </picture>
+        <picture>
+          <source srcset="img/Feline_Friends/Feline_Friends_Mobile_Mockups.png" media="(max-width:767px)">
+          <img src="img/Feline_Friends/Feline_Friends_Mobile_Mockups@2x.png" alt="Feline Friends High-Fidelity image">
+        </picture>
+      </div>
+      <div class="container">
+        <h2>Conclusion</h2>
+        <p>Is the design TOO simplistic?</p>
+        <p> No! The test participants liked the simplistic design and it made it easier to navigate and understand.</p>
+        <p><b>Lesson Learnt: If in doubt, always test!</b></p>
+        <p>Will using Balsamiq for mid-fidelity mean it takes longer to get to the final design in Sketch?</p>
+        <p>Actually, using Balsamiq meant I could quickly create a good quality prototype that could easily be shared with participants via email. The time saved here meant I could afford the time spent migrating the design into sketch!</p>
+        <p><b>Lesson Learnt: Balsamiq is great for quick low to mid-fidelity designs and good for prompt prototyping as well!</b></p>
+      </div>
   </main>
   <footer id="contact">
     <div class="container">
@@ -141,7 +152,8 @@
           </svg>
         </a>
         <a href="https://www.behance.net/HR_UIDesign" target="_blank">
-          <svg class="icon" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg class="icon" enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
             <g>
               <path d="M38.031,27.257c-3.174,0-3.615,3.168-3.615,3.168h6.748C41.164,30.425,41.207,27.257,38.031,27.257z" />
               <path d="M22.721,30.425h-5.982v5.492h5.296c0.09,0,0.225,0.002,0.383,0c0.852-0.02,2.467-0.268,2.467-2.67   C24.885,30.396,22.721,30.425,22.721,30.425z" />
@@ -157,6 +169,8 @@
     </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
